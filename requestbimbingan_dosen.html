@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Request Bimbingan Dosen</title>
+	<script src="bootstrap/jquery-3.6.0.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+
+	</script>
+	<style type="text/css">
+		.x{
+			font-size: 1.2em;
+			padding-top: 30px;
+		}
+		.mahasiswa-card{
+			background-color: #C0C0C0;
+			padding-top: 10px;
+		}
+		button{
+			margin: 3px;
+		}
+
+		.coba{
+			display: flex;
+			flex-direction: column;
+			align-items: flex-center;
+		}
+
+		.coba button{
+			width: 15em; height: 50px; 
+		}
+
+		@media screen and (max-width: 720px) {
+			.mahasiswa-foto { display: none; }  
+			body{
+				font-size: 12px;
+			}
+			.coba button{
+				width: 10em;
+				height: 30px;
+			}
+		}
+	</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div class="container border border-3">
+		<h2>Request Bimbingan</h2>
+		<div class="row">
+			<div class="col-md-8 mahasiswa-card">
+				<img src="mhsimg.jfif" alt="..." class="img-thumbnail mahasiswa-foto" style="float: left; height: 75%; margin: 5px;  ">
+				<div class="x">
+					<div>Nama: Jojo</div>
+					<div>Email: c14210123@john.petra.ac.id</div>
+					<div>NRP: c14210123</div>
+					<div>Tgl Bimbingan: 07 Januari 2020 (07:30 WIB)</div>
+				</div>
+				
+			</div>
+			<div class="col-md-4 d-flex align-items-center justify-content-center" style="border: solid 1px red">
+				<div class="coba">
+					<button type="button" class="btn btn-success" style="margin: 2.5px">Konfirmasi</button>
+					<button type="button" class="btn btn-danger">Batalkan</button>
+				</div>
+			</div>
+		</div>
+
+
+
+	</div>
+
+</div>
+</body>
+</html>
