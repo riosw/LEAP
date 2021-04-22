@@ -10,12 +10,14 @@
 	</script>
 	<style type="text/css">
 		.x{
-			font-size: 1.2em;
-			padding-top: 30px;
+			font-size: 1.1em;
 		}
 		.mahasiswa-card{
 			background-color: #C0C0C0;
-			padding-top: 10px;
+			padding: 10px;
+			padding-bottom: 45px;
+			border-radius: 15px; 
+			margin-bottom: 10px;
 		}
 		button{
 			margin: 3px;
@@ -34,11 +36,6 @@
 		@media screen and (max-width: 720px) {
 			.mahasiswa-foto { display: none; }  
 			body{
-				font-size: 12px;
-			}
-			.coba button{
-				width: 10em;
-				height: 30px;
 			}
 		}
 	</style>
@@ -47,28 +44,77 @@
 <body>
 	<div class="container border border-3">
 		<h2>Request Bimbingan</h2>
-		<div class="row">
-			<div class="col-md-8 mahasiswa-card">
-				<img src="mhsimg.jfif" alt="..." class="img-thumbnail mahasiswa-foto" style="float: left; height: 75%; margin: 5px;  ">
-				<div class="x">
-					<div>Nama: Jojo</div>
-					<div>Email: c14210123@john.petra.ac.id</div>
-					<div>NRP: c14210123</div>
-					<div>Tgl Bimbingan: 07 Januari 2020 (07:30 WIB)</div>
+		<div class="container d-grid gap-3"> <!-- Might need to remove css margins (karena uda pake grid) -->
+			<div class="row">
+				<div class="col-md-8">
+					<div class="mahasiswa-card">
+						<img src="download.png" alt="..." class="img-thumbnail mahasiswa-foto rounded float-start" style="width: 22%; margin: 5px; margin-right: 15px ">
+						<div class="x align-self-center">
+							<div>Nama: Jojo Qwertyuiop</div>
+							<div>Email: c14210123@john.petra.ac.id</div>
+							<div>NRP: c14210123</div>
+							<div>Tgl Bimbingan: 07 Januari 2020 (07:30 WIB)</div>
+						</div>
+					</div>
+
 				</div>
-				
+				<div class="col-md-4 d-flex align-items-center">
+					<div class="d-grid gap-2 col-6 mx-auto">
+						<button type="button" class="btn btn-success" style="">Konfirmasi</button>
+						<button type="button" class="btn btn-danger">Batalkan</button>
+					</div>
+				</div>
 			</div>
-			<div class="col-md-4 d-flex align-items-center justify-content-center" style="border: solid 1px red">
-				<div class="coba">
-					<button type="button" class="btn btn-success" style="margin: 2.5px">Konfirmasi</button>
-					<button type="button" class="btn btn-danger">Batalkan</button>
+			<div class="row">
+				<div class="col-md-8">
+					<div class="mahasiswa-card">
+						<img src="download.png" alt="..." class="img-thumbnail mahasiswa-foto rounded float-start" style="width: 22%; margin: 5px; margin-right: 15px ">
+						<div class="x align-self-center">
+							<div>Nama: Jojo Qwertyuiop</div>
+							<div>Email: c14210123@john.petra.ac.id</div>
+							<div>NRP: c14210123</div>
+							<div>Tgl Bimbingan: 07 Januari 2020 (07:30 WIB)</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="col-md-4 d-flex align-items-center">
+					<div class="d-grid gap-2 col-6 mx-auto">
+						<button type="button" class="btn btn-success" style="">Konfirmasi</button>
+						<button type="button" class="btn btn-danger">Batalkan</button>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-8">
+					<div class="mahasiswa-card">
+						<img src="download.png" alt="..." class="img-thumbnail mahasiswa-foto rounded float-start" style="width: 22%; margin: 5px; margin-right: 15px ">
+						<div class="x align-self-center">
+							<div>Nama: Jojo Qwertyuiop</div>
+							<div>Email: c14210123@john.petra.ac.id</div>
+							<div>NRP: c14210123</div>
+							<div>Tgl Bimbingan: 07 Januari 2020 (07:30 WIB)</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="col-md-4 d-flex align-items-center">
+					<div class="d-grid gap-2 col-6 mx-auto">
+						<button type="button" class="btn btn-success" style="">Konfirmasi</button>
+						<button type="button" class="btn btn-danger">Batalkan</button>
+					</div>
 				</div>
 			</div>
 		</div>
-
-
-
 	</div>
+	<div class="footer d-flex justify-content-around" >
+			<div>Page 1</div>
+			<div></div>
+			<div>
+				<button type="button" class="btn btn-light">Back</button>
+				<button type="button" class="btn btn-light">Next</button>
+			</div>
+		</div>
 
 </div>
 </body>
