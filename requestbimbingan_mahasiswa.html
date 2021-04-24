@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bimbingan</title>
+	<script src="bootstrap/jquery-3.6.0.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+	
+	<style type="text/css">
+		.blank-row td{
+			height: 45px;
+		}
+		tfoot td{
+			height: 45px;
+
+		}
+		thead tr th{
+			text-align: center;
+		}
+		@media screen and (max-width: 720px) {
+			form div label{
+				text-align: left;
+			}
+		}
+	</style>
+	<script>
+
+	</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div class="container" style="padding-top: 40px;">
+		<form class="d-grid gap-4">
+			<div class="row">
+				<label for="inputTypeFile" class="col-3" style="text-align: right;">Tanggal Bimbingan: </label> 
+				<!-- Mungkin di setting supaya harus request max h-2 (sblm bimbingan) atau h-berapa kalo bs-->
+				<div class="col-3">
+					<input type="date" name="form-control">
+
+				</div>
+
+			</div>
+			<div class="row">
+				<label for="inputTypeFile" class="col-3" style="text-align: right;">Waktu Bimbingan: </label>
+				<div class="col-3">
+					<input type="time" name="form-control">
+				</div>
+			</div>
+			<div class="row">
+				<label class="col-3" style="text-align: right;">
+					<p>Nama Pembimbing:</p>
+				</label>
+				<div class="col-3">
+					<p>Joko Widodo</p>
+				</div>
+			</div>
+		</form>
+
+		<table class="table mt-3 table-bordered" style="border-color: black;">
+			<thead>
+				<tr class="">
+					<th scope="col">Nama Pembimbing</th>
+					<th scope="col">Topik</th>
+					<th scope="col">Ruangan</th>
+					<th scope="col">Hari/Tanggal</th>
+					<th scope="col">Waktu</th>
+					<th scope="col">Status</th>
+				</tr>
+			</thead>
+			<!-- Ga perlu pagination kayanya, soalnya ga banyak2,  -->
+			<tbody>
+				<tr>
+					<td>Mark</td>
+					<td>Otto</td>
+					<td>@mdo</td>
+					<td>Senin 24 Agustus 2021</td>
+					<td>12:30</td>
+					<td>Selesai</td>
+				</tr>
+				<tr>
+					<td>Mark</td>
+					<td>Otto</td>
+					<td>@mdo</td>
+					<td>Senin 24 Agustus 2021</td>
+					<td>12:30</td>
+					<td>Disetujui</td>
+				</tr>
+				<tr>
+					<td>Mark</td>
+					<td>Otto</td>
+					<td>@mdo</td>
+					<td>Senin 24 Agustus 2021</td>
+					<td>12:30</td>
+					<td>Ditolak</td>
+				</tr>
+				<tr>
+					<td>Mark</td>
+					<td>Otto</td>
+					<td>@mdo</td>
+					<td>Senin 24 Agustus 2021</td>
+					<td>12:30</td>
+					<td>Dalam Pengajuan</td>
+				</tr>
+				<tr class="blank-row">
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tfoot  class="bg-secondary" style="height: 100px;">
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tfoot>
+			</tbody>
+			
+
+		</table>
+		
+		<div class="footer d-flex justify-content-around" >
+		<div class="col-sm-12 d-flex justify-content-between">
+				<button type="submit" class="btn btn-danger" style="color: black">Back</button>
+
+				<button type="submit" class="btn btn-primary" style="color: black">Submit</button>
+				<div></div>
+			</div>
+	</div>
+	</div>
+</body>
+</html>
