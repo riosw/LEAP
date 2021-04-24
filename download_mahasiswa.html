@@ -15,8 +15,13 @@
 			height: 45px;
 
 		}
+
 		thead tr th{
 			text-align: center;
+		}
+		.table tbody tr td{
+			text-align: center;
+			vertical-align: middle;
 		}
 		@media screen and (max-width: 720px) {
 			form div label{
@@ -42,80 +47,65 @@
 	</div>
 	<div class="container" style="padding-top: 40px;">
 
-		<table class="table mt-3 table-bordered" style="border-color: black;">
-			<thead>
-				<tr class="">
-					<th scope="col">Nama Pembimbing</th>
-					<th scope="col">Topik</th>
-					<th scope="col">Ruangan</th>
-					<th scope="col">Hari/Tanggal</th>
-					<th scope="col">Waktu</th>
-					<th scope="col">Status</th>
+		<table class="table mt-3 table-striped border border-secondary" style="">
+			<thead class="table-light">
+				<tr >
+					<th scope="col">Nama File</th>
+					<th scope="col">Ukuran</th>
+					<th scope="col">Kategori</th>
+					<th scope="col">Tanggal Upload</th>
+					<th scope="col">Download</th>
+					
 				</tr>
 			</thead>
-			<!-- Ga perlu pagination kayanya, soalnya ga banyak2,  -->
 			<tbody>
-				<tr>
-					<td>Mark</td>
+				<tr >
+					<td>Format Dasar Proposal </td>
 					<td>Otto</td>
 					<td>@mdo</td>
-					<td>Senin 24 Agustus 2021</td>
-					<td>12:30</td>
-					<td>Selesai</td>
+					<td>24 Agustus 2021 15:00</td>
+					<td>
+						<button type="button" class="btn btn-primary">Download</button>
+					</td>
 				</tr>
-				<tr>
-					<td>Mark</td>
+				<tr >
+					<td>Daftar Instansi Pengabdian Masyarakat</td>
 					<td>Otto</td>
 					<td>@mdo</td>
-					<td>Senin 24 Agustus 2021</td>
-					<td>12:30</td>
-					<td>Disetujui</td>
+					<td>24 Agustus 2021 15:00</td>
+					<td>
+						<button type="button" class="btn btn-primary">Download</button>
+					</td>
 				</tr>
-				<tr>
-					<td>Mark</td>
+				<tr >
+					<td>Format Dasar Proposal </td>
 					<td>Otto</td>
 					<td>@mdo</td>
-					<td>Senin 24 Agustus 2021</td>
-					<td>12:30</td>
-					<td>Ditolak</td>
+					<td>24 Agustus 2021 15:00</td>
+					<td>
+						<button type="button" class="btn btn-primary">Download</button>
+					</td>
 				</tr>
-				<tr>
-					<td>Mark</td>
-					<td>Otto</td>
-					<td>@mdo</td>
-					<td>Senin 24 Agustus 2021</td>
-					<td>12:30</td>
-					<td>Dalam Pengajuan</td>
-				</tr>
-				<tr class="blank-row">
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tfoot  class="bg-secondary" style="height: 100px;">
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tfoot>
+
+
 			</tbody>
 			
 
 		</table>
 		
-		<div class="footer d-flex justify-content-around" >
-		<div class="col-sm-12 d-flex justify-content-between">
-				<a type="button" class="btn btn-danger" style="color: black" href="main_mahasiswa.html">Back</a>
+		
+	</div>
+	<div class="footer d-flex justify-content-around">
+     <div class="col-sm-9 d-flex justify-content-between mb-sm-4" style="position: relative; bottom:  0;">
 
-				<button type="submit" class="btn btn-primary" style="color: black">Submit</button>
-				<div></div>
-			</div>
-	</div>
-	</div>
+        <a type="button" class="btn btn-danger" style="color: black" href="main_mahasiswa.html">Back</a>
+        <div>
+            <button type="button" class="btn btn-light">Prev</button>
+            <button type="button" class="btn btn-light">Next</button>
+        </div>
+
+    </div>
+
+</div>
 </body>
 </html>
