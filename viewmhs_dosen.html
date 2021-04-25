@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bimbingan</title>
+	<script src="bootstrap/jquery-3.6.0.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+	
+	<style type="text/css">
+		thead tr th{
+			text-align: center;
+		}
+		.table tbody tr td{
+			text-align: center;
+			vertical-align: middle;
+		}
+	</style>
+	<script>
+
+	</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div class="header">
+		<div class="row" style="background-color: #1A5BC6 ">
+			<div class="col-6 col-md-1" style="text-align: center;"> <img  src="petra.png"  class="rounded-circle"  width="100%" height="100%" style="text-align: center; " ></div>
+			<div class="col-12 col-md-9" style="color: white; font-size: 25px "  >Universitas <br> Kristen <br> Petra</div>
+
+			<div class="col-12 col-md-2" style="text-align: center;"><img  src="petra.png"  class="rounded-circle"  width="50%" height="100%" style="text-align: center; " >
+				
+			</div>
+		</div>
+		<div class="row" style="background-color: #2B88F4 ">
+			<div class="col-12 col-md-4"style="color: white; font-size: 16px "> <a style="color: white; text-decoration: none;" href="login.html">Perkuliahan</a> <a style="color: white; text-decoration: none; padding-left: 20px " href="login.html">Leap</a> <a style="color: white; text-decoration: none; padding-left: 20px" href="login.html">Pra-Skripsi</a> <a style="color: white; text-decoration: none; padding-left: 20px" href="login.html">Skripsi</a>
+			</div> 
+		</div>
+	</div>
+	<div class="container" style="padding-top: 40px;">
+		<div class="row ">
+			<div class="col-sm-2">
+				<p>Nama</p>
+				<p>NRP</p>
+				<p>Email</p>
+				<p>Nomor HP</p>
+				<p>Kategori LEAP</p>
+				<p>Topik Leap</p>
+			</div>
+			<div class="col-auto">
+				<p>: Handoko Gunawan</p>
+				<p>: c14200123</p>
+				<p>: c14200123@john.petra.ac.id</p>
+				<p>: 08102847299</p>
+				<p>: Research & Development</p>
+				<p>: Menganalisa Curah Hujan dengan AI</p>
+			</div>
+		</div>
+		<table class="table table-striped border border-secondary ">
+
+			<thead class="table-light">
+				<div class="d-flex flex-row-reverse" style="margin-top: -45px; margin-bottom: 10px">
+					<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#nilaiModal">
+						Edit Nilai
+					</button>
+				</div>
+				<tr >
+					<th scope="col">Nama Dosen</th>
+					<th scope="col">NIP</th>
+					<th scope="col">Pihak</th>
+					<th scope="col">Nilai</th>
+				</tr>
+
+
+			</thead>
+			<tbody>
+				<tr >
+					<td>Hendy</td>
+					<td>150123</td>
+					<td>Pembimbing</td>
+					<td>100</td>
+
+				</tr>
+
+				<tr >
+					<td>Wendy</td>
+					<td>150921</td>
+					<td>Penguji</td>
+					<td>80</td>
+
+				</tr>
+			</tbody>
+		</table>
+		<h4>Daftar File Mahasiswa</h4>
+		<table class="table mt-3 table-striped border border-secondary" style="">
+			<thead class="table-light">
+				<tr >
+					<th scope="col">Nama File </th>
+					<th scope="col">Ukuran </th>
+					<th scope="col">Kategori</th>
+					<th scope="col">Tanggal Upload</th>
+					<th scope="col">View/Download</th>
+					
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Proposal1.pdf </td>
+					<td>4.3MB</td>
+					<td>Proposal</td>
+					<td>24 Agustus 2021 15:00</td>
+					<td>
+						<button type="button" class="btn btn-primary">Download</button>
+						<button type="button" class="btn btn-primary">View</button>
+					</td>
+				</tr>
+				<tr>
+					<td>Laporan1.pdf </td>
+					<td>4.3MB</td>
+					<td>Laporan</td>
+					<td>24 Agustus 2021 15:00</td>
+					<td>
+						<button type="button" class="btn btn-primary">Download</button>
+						<button type="button" class="btn btn-primary">View</button>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="container bg-secondary" style="height: 500px;">
+			
+		</div>
+</div>
+<div class="footer d-flex justify-content-around mt-4">
+	<div class="col-sm-9 d-flex justify-content-between mb-sm-4" style="position: relative; bottom:  0;">
+
+		<a type="button" class="btn btn-danger" style="color: black" href="listmhs_dosen.html">Back to List</a>
+
+		<!-- Button trigger modal -->
+		
+
+		<!-- Modal -->
+		<div class="modal fade" id="nilaiModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Isi/Ganti Nilai</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<p class="mb-3">Input Nilai</p>
+						<input type="text" class="form-control" placeholder="35" aria-label="Nilai">
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+</body>
+</html>

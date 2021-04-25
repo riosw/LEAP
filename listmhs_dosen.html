@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bimbingan</title>
+	<script src="bootstrap/jquery-3.6.0.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+	
+	<style type="text/css">
+		.blank-row td{
+			height: 45px;
+		}
+		tfoot td{
+			height: 45px;
+
+		}
+
+		thead tr th{
+			text-align: center;
+		}
+		.table tbody tr td{
+			text-align: center;
+			vertical-align: middle;
+		}
+		.table tbody tr td a{
+			text-decoration: none; /*nama mahasiswa tdak di underline*/
+		}
+
+		@media screen and (max-width: 720px) {
+			form div label{
+				text-align: left;
+			}
+		}
+	</style>
+	<script>
+
+	</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div class="header">
+		<div class="row" style="background-color: #1A5BC6 ">
+			<div class="col-6 col-md-1" style="text-align: center;"> <img  src="petra.png"  class="rounded-circle"  width="100%" height="100%" style="text-align: center; " ></div>
+			<div class="col-12 col-md-9" style="color: white; font-size: 25px "  >Universitas <br> Kristen <br> Petra</div>
+
+			<div class="col-12 col-md-2" style="text-align: center;"><img  src="petra.png"  class="rounded-circle"  width="50%" height="100%" style="text-align: center; " >
+				
+			</div>
+		</div>
+		<div class="row" style="background-color: #2B88F4 ">
+			<div class="col-12 col-md-4"style="color: white; font-size: 16px "> <a style="color: white; text-decoration: none;" href="login.html">Perkuliahan</a> <a style="color: white; text-decoration: none; padding-left: 20px " href="login.html">Leap</a> <a style="color: white; text-decoration: none; padding-left: 20px" href="login.html">Pra-Skripsi</a> <a style="color: white; text-decoration: none; padding-left: 20px" href="login.html">Skripsi</a>
+			</div> 
+		</div>
+	</div>
+	<div class="container" style="padding-top: 40px;">
+		<div class="row mb-3">
+				<div class="col-sm-3">
+					
+					<select class="form-select" aria-label="SelectMhs" id="SelectMhs">
+						<option selected value="bimbingan">Mahasiswa Bimbingan</option>
+						<option value="uji">Mahasiswa diuji</option>
+				
+					</select>
+				</div>
+				<div class="col-sm-2" >
+
+					<div class="text-end" style="margin-top: 5px">Search: </div>
+				</div>
+				<div class="col-sm-3">
+					<div class=" input-group ">
+					<input class="form-control" type="text" aria-label="Subject" style="border-radius: 15px;" >
+				
+					</div>
+					
+				</div>
+				<div class="col-sm-3">
+						<select class="form-select" aria-label="SelectMhs" id="SelectMhs">
+						<option selected value="Nama">By Nama</option>
+						<option value="Topik">By Topik</option>
+						
+					</select>
+					
+				</div>
+				<div class="col-sm-1">
+					<button type="button" class="btn">
+						<img src="bootstrap/icons/search.svg" alt="Bootstrap" width="16" height="16">
+					</button>
+				</div>
+			</div>
+		<table class="table mt-3 table-striped border border-secondary" style="">
+			<thead class="table-light">
+				<tr >
+					<th scope="col">Nama Mahasiswa<button type="" class="btn">
+						<img src="bootstrap/icons/arrow-down-up.svg" alt="Bootstrap" width="16" height="16">
+						</button>
+</th>
+					<th scope="col">NRP<button type="" class="btn">
+						<img src="bootstrap/icons/arrow-down-up.svg" alt="Bootstrap" width="16" height="16">
+						</button></th>
+					<th scope="col">Topik<button type="" class="btn">
+						<img src="bootstrap/icons/arrow-down-up.svg" alt="Bootstrap" width="16" height="16">
+						</button></th>
+					<th scope="col">Tanggal Bimbingan/Sidang<button type="" class="btn">
+						<img src="bootstrap/icons/arrow-down-up.svg" alt="Bootstrap" width="16" height="16">
+						</button></th>
+					
+				</tr>
+			</thead>
+			<tbody>
+				<tr >
+					<td><a href="viewmhs_dosen.html">Handoko Gunawan</a> </td>
+					<td>C14200102</td>
+					<td>Mengobati COVID dengan Fuzzy Logic</td>
+					<td>24 Agustus 2021 15:00</td>
+
+				</tr>
+
+
+			</tbody>
+			
+
+		</table>
+		
+		
+	</div>
+	<div class="footer d-flex justify-content-around">
+     <div class="col-sm-9 d-flex justify-content-between mb-sm-4" style="position: relative; bottom:  0;">
+
+        <a type="button" class="btn btn-danger" style="color: black" href="main_dosen.html">Back</a>
+        <div>Page 1 / x</div>
+        <div>
+            <button type="button" class="btn btn-light">Prev</button>
+            <button type="button" class="btn btn-light">Next</button>
+        </div>
+
+
+    </div>
+
+</div>
+</body>
+</html>

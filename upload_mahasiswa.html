@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Main Mahasiswa</title>
+	<title>Upload Mahasiswa</title>
 	<script src="bootstrap/jquery-3.6.0.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
-	<script type="text/javascript">
-
+	<script>
+		$(document).ready(function(){
+			$('#TipeUpload').on('change', function() {
+				if(this.value=="Laporan"){
+					$('#katUsulan').hide();
+				}else{
+					$('#katUsulan').show();
+				}
+			});
+		});
+		
 	</script>
 	<style type="text/css">
 		
@@ -23,19 +32,37 @@
 
 			</div>
 		</div>
+		<div class="row" style="background-color: #2B88F4 ">
+			<div class="col-12 col-md-4"style="color: white; font-size: 16px "> <a style="color: white; text-decoration: none;" href="login.html">Perkuliahan</a> <a style="color: white; text-decoration: none; padding-left: 20px " href="login.html">Leap</a> <a style="color: white; text-decoration: none; padding-left: 20px" href="login.html">Pra-Skripsi</a> <a style="color: white; text-decoration: none; padding-left: 20px" href="login.html">Skripsi</a>
+			</div> 
+		</div>
 	</div>
-	<div class="container pt-5">
+
+	<div class="container pt-3">
 		<form>
 			<div class="row mb-3">
-				<!-- <label for="inputTypeFile" class="col-sm-1 col-form-label">Jenis</label> -->
-				<div class="col-sm-3">
-					<select class="form-select" aria-label="Default select example" style="">
+				
+				<div class="col-sm-4">
+					<select class="form-select" aria-label="Default select example" id="TipeUpload">
 						<option selected>Usulan</option>
-						<option value="1">Laporan</option>
-					<!-- 	<option value="2">Two</option>
-						<option value="3">Three</option> -->
+						<option value="Laporan">Laporan</option>
+
 					</select>
+					<div class="row mt-3" id="katUsulan">
+						<div class="col-auto">
+							<label for="KategoriSELECT" class="col-sm-1 col-form-label">Kategori: </label>
+						</div>
+						<div class="col-auto">
+							<select class="form-select " aria-label="Default select example" id="KategoriSELECT">
+								<option selected value="RND">Research & Development</option>
+								<option value="CE">Community Engangement</option>
+								<option value="IE">Industrial Exposure</option>
+
+							</select>
+						</div>
+					</div>
 				</div>
+				
 			</div>
 			<div class="row mb-3">
 				<label for="inputSubject" class="col-sm-2 col-form-label text-end">Subject:</label>
@@ -103,10 +130,10 @@
 
 
 		</div>
-		<div class="col-sm-6 d-flex justify-content-between" style="position: absolute; bottom: 0; margin-bottom: 20px;">
-				<a type="button" class="btn btn-danger" style="color: black" href="main_mahasiswa.html">Back</a>
-				<button type="submit" class="btn btn-primary" style="color: black">Submit</button>
-				<div></div>
-			</div>
+		<div class="col-sm-6 d-flex justify-content-between" style="position: relative; bottom: 0; margin-top: 20px;">
+			<a type="button" class="btn btn-danger" style="color: black" href="main_mahasiswa.html">Back</a>
+			<button type="submit" class="btn btn-primary" style="color: black">Submit</button>
+			<div></div>
+		</div>
 	</body>
 	</html>
