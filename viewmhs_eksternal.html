@@ -64,10 +64,10 @@
 					</button>
 				</div>
 				<tr >
-					<th scope="col">Nama Dosen</th>
-					<th scope="col">NIP</th>
-					<th scope="col">Pihak</th>
+					<th scope="col">Nama</th>
+					<th scope="col">Asal Instansi</th>
 					<th scope="col">Nilai</th>
+					<th scope="col">Komentar</th>
 				</tr>
 
 
@@ -75,74 +75,21 @@
 			<tbody>
 				<tr >
 					<td>Hendy</td>
-					<td>150123</td>
-					<td>Pembimbing</td>
-					<td>100</td>
-
-				</tr>
-
-				<tr >
-					<td>Wendy</td>
-					<td>150921</td>
-					<td>Penguji</td>
-					<td>80</td>
+					<td>Tokopedia</td>
+					<td>98</td>
+					<td>Mahasiswa baik aktif</td>
 
 				</tr>
 			</tbody>
 		</table>
-		<h4>Daftar File Mahasiswa</h4>
-		<table class="table mt-3 table-striped border border-secondary" style="">
-			<thead class="table-light">
-				<tr >
-					<th scope="col">Nama File </th>
-					<th scope="col">Ukuran </th>
-					<th scope="col">Kategori</th>
-					<th scope="col">Tanggal Upload</th>
-					<th scope="col">View/Download</th>
-					
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>Proposal1.pdf </td>
-					<td>4.3MB</td>
-					<td>Proposal</td>
-					<td>24 Agustus 2021 15:00</td>
-					<td>
-						<button type="button" class="btn btn-primary">Download</button>
-						<a type="button" href="lorem-ipsum.pdf" target="_blank" class="btn btn-primary">View</a>
-					</td>
-				</tr>
-				<tr>
-					<td>Proposal1.pdf </td>
-					<td>4.3MB</td>
-					<td>Proposal</td>
-					<td>24 Agustus 2021 15:00</td>
-					<td>
-						<button type="button" class="btn btn-primary">Download</button>
-						<a type="button" href="lorem-ipsum.pdf" target="_blank" class="btn btn-primary">View</a>
-					</td>
-				</tr>
+		<div class="col-sm-9 d-flex justify-content-between mb-sm-4" style="position: relative; bottom:  0;">
 
-				<tr>
-					<td>Laporan1.pdf </td>
-					<td>4.3MB</td>
-					<td>Laporan</td>
-					<td>24 Agustus 2021 15:00</td>
-					<td>
-						<button type="button" class="btn btn-primary">Download</button>
-						<a type="button" href="lorem-ipsum.pdf" target="_blank" class="btn btn-primary">View</a>
-					</td>
-				</tr>
-			</tbody>
-		</table>
-		
+			<a type="button" class="btn btn-danger" style="color: black" href="listmhs_eksternal.html">Back to List</a>
+		</div>
 
-</div>
-<div class="footer d-flex justify-content-around mt-4">
-	<div class="col-sm-9 d-flex justify-content-between mb-sm-4" style="position: relative; bottom:  0;">
+	</div>
+	<div class="footer d-flex justify-content-around mt-4">
 
-		<a type="button" class="btn btn-danger" style="color: black" href="listmhs_dosen.html">Back to List</a>
 
 		<!-- Button trigger modal -->
 		
@@ -158,16 +105,19 @@
 					<div class="modal-body">
 						<p class="mb-3">Input Nilai</p>
 						<input type="text" class="form-control" placeholder="35" aria-label="Nilai">
+						<p class="mb-3 mt-3">Input Komentar</p>
+						<textarea class="form-control" placeholder="Komentar" aria-label="Komentar" id="commentInputArea"></textarea> 
 					</div>
+
 					<div class="modal-footer">
 						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
 						<button type="button" class="btn btn-primary">Save changes</button>
 					</div>
 				</div>
 			</div>
-		</div>
-	</div>
 
-</div>
+		</div>
+
+	</div>
 </body>
 </html>
