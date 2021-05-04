@@ -20,12 +20,12 @@
 	<style type="text/css">
 		
 	</style>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 </head>
 <body>
 	<div class="header">
 		<div class="row" style="background-color: #1A5BC6 ">
-			<div class="col-6 col-md-1" style="text-align: center;"> <img  src="petra.png"  class="rounded-circle"  width="100%" height="100%" style="text-align: center; " ></div>
+			<div class="col-6 col-md-1" style="text-align: center;"> <img  src="petra.png"  class="rounded-circle"  width="100%" height="100%" style="text-align: center; " onclick="window.location= 'main_mahasiswa.html'" ></div>
 			<div class="col-12 col-md-9" style="color: white; font-size: 25px "  >Universitas <br> Kristen <br> Petra</div>
 
 			<div class="col-12 col-md-2" style="text-align: center;"><img  src="petra.png"  class="rounded-circle"  width="50%" height="100%" style="text-align: center; " >
@@ -64,12 +64,14 @@
 				</div>
 				
 			</div>
-			<div class="row mb-3">
+			<!-- butuh subject? -->
+			<!-- <div class="row mb-3">
 				<label for="inputSubject" class="col-sm-2 col-form-label text-end">Subject:</label>
 				<div class="col-md-5">
 					<input class="form-control" type="text" aria-label="Subject" >
 				</div>
-			</div>
+			</div> --> 
+
 			<div class="row mb-4">
 				<label for="inputFile" class="col-sm-2 col-form-label text-end">Upload File:</label>
 				<div class="col-md-5">
@@ -78,7 +80,7 @@
 			</div>
 
 		</form>
-		<div class="container overflow-auto " style="max-height: 220px; width: 1020px">
+		<!-- <div class="container overflow-auto " style="max-height: 220px; width: 1020px">
 			<table class="table table-striped border border-secondary " style="width: 1000px" >
 				<thead class="table-light">
 					<tr >
@@ -125,13 +127,36 @@
 
 
 			</table>
+		</div> -->
+		<div class="container overflow-auto " style="max-height: 220px; width: 1020px">
+			<table class="table table-striped border border-secondary " style="width: 550px" >
+				<thead class="table-light">
+					<tr >
+						<th scope="col">Jenis File</th>
+						<th scope="col">Nama File</th>
+						<th scope="col">Status</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr >
+						<td>Proposal</td>
+						<td>proposal.pdf</td>
+						<td>Diterima</td>
+					</tr>
+					<tr >
+						<td>Laporan </td>
+						<td>laporan.pdf</td>
+						<td>Menunggu konfirmasi</td>
+					</tr>
+
+				</tbody>
 
 
-
-
+			</table>
 		</div>
-		<div class="col-sm-6 d-flex justify-content-between" style="position: relative; bottom: 0; margin-top: 20px;">
+		<div class="d-flex justify-content-between" style="position: relative; bottom: 0; margin-top: 20px;">
 			<a type="button" class="btn btn-danger" style="color: black" href="main_mahasiswa.html">Back</a>
+			
 			<button type="submit" class="btn btn-primary" style="color: black">Submit</button>
 			<div></div>
 		</div>
